@@ -1,0 +1,1 @@
+await page.locator('.order-1 > .row > .order-1').click();
