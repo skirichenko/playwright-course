@@ -11,7 +11,7 @@ test('user can submit `Become A MERN Store Seller!` form', async ({ page }) => {
   
   await expect(page.getByPlaceholder('Your Full Name')).toBeEmpty();
   await expect(page.getByRole('heading', {
-    name: 'We received your request! we will reach you on your phone number'})).not.toBeVisible()
+    name: 'We received your request! we will reach you on your phone number'})).toBeVisible()
   
   
 });
